@@ -1498,9 +1498,7 @@ factory.$inject = ['dep1', 'dep2', ...];
 function factory(dep1, dep2, ...) { ... }
 ```
 
-It shouldn't affect the behavior of apps, since both forms are equally suitable
-to be used for registering AngularJS injectable services, but it is possible
-that type-checking might fail or that current code breaks if it relies on the
+Since both forms are equally suitable to be used for registering AngularJS injectable services, it shouldn't affect the behavior of apps, but it is possible that type-checking fails or that current code breaks if it relies on the
 returned value being an array.
 
 
